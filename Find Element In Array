@@ -1,0 +1,21 @@
+ 
+void main() {
+    print('Find Element ${findElement([2,3,5,5,5,2,1],7,65)}');
+}
+
+
+
+
+bool  findElement(List<int > arry,int n,int item){
+  
+ 
+  for(int i=0;i<n;i++){
+    if(arry[i]==item){
+      return true;
+    }
+ 
+  }
+  return false;
+  
+  
+}
