@@ -1,0 +1,34 @@
+void main() {
+  int sum = sumOfNnaturalNo(3);
+  print('sum of n natural num ${sum}');
+  print('\nnsum of 6 natural num ${second(6)}');
+  print('\nnsum of 10 natural num ${third(3)}');
+}
+
+
+
+int sumOfNnaturalNo(int n) {
+  int sum = 0;
+
+  for (int i = 1; i <= n; i++) {
+    sum += i;
+  }
+  return sum;
+}
+
+double second(int n) {
+  return n * (n + 1) / 2;
+}
+
+
+int  third(int n){
+  
+  int sum=0;
+  for (int i=1;i<=n;i++){
+    
+    for(int j=1;j<=i;j++){
+      sum++;
+    }
+  }
+  return sum;
+}
